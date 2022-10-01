@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="author" content="Michael Indako">
+				<meta name="keywords" content="HTML, CSS,Javascript">
+	<meta name="description" content="color-clash template">
+				<title>color-clash template</title>
+				<style>
+				    *{
+				    margin: 0;
+				    padding: 0;
+				    }
+								.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  								background-color: gray;
+  								background: linear-gradient( 45deg , blue, violet, lightgrey, purple, teal);
+}
+.row {
+  grid-column: 4 / 1;
+  grid-row: 9 / 7;
+  background: white;
+  gap: 6px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background: linear-gradient( 30deg , black, lightblue);
+}
+.col1 {
+  grid-column: 1 / 4;
+  grid-row: 6;
+  background: red;
+  gap: px;
+  width: 30px;
+  writing-mode: vertical-lr;
+text-orientation: upright;
+}
+.col2 {
+  grid-column: 1 / 4;
+  grid-row: 5 ;
+  background: blue;
+  gap: 6px;
+  margin-left: 35px;
+  width: 80%;
+  height: 300px;
+  border-radius:15px 16px 15px 16px;
+  background: linear-gradient( 45deg , white, lightgrey);
+}
+p{
+				color: red;
+				
+}
+h2{
+    margin: 5px;
+    text-decoration: underline;
+}
+				</style>
+</head>
+<body>
+				<div class="wrapper">
+				<div class="row">footer</div>
+				<div class="col1">icons</div>
+				<div class="col2"><p>About</p>
+				<h2>The Lost symbol</h2>
+				    </div>
+</div>
+</body>
+</html>
